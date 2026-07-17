@@ -6,6 +6,7 @@
     <title>Favour Momooluwa Adebisi | Security Engineer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        /* All CSS remains the same as before — unchanged */
         :root {
             --primary: #1a365d;
             --secondary: #2d3748;
@@ -17,52 +18,43 @@
             --text-light: #718096;
             --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-
         html {
             scroll-behavior: smooth;
         }
-
         body {
             background-color: var(--light);
             color: var(--text);
             line-height: 1.6;
         }
-
         .container {
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
-
         section {
             padding: 80px 0;
         }
-
         h1, h2, h3, h4 {
             margin-bottom: 1rem;
             color: var(--primary);
         }
-
         h1 {
             font-size: 2.5rem;
             line-height: 1.2;
         }
-
         h2 {
             font-size: 2rem;
             text-align: center;
             margin-bottom: 3rem;
             position: relative;
         }
-
         h2::after {
             content: '';
             position: absolute;
@@ -73,12 +65,10 @@
             height: 4px;
             background-color: var(--accent);
         }
-
         p {
             margin-bottom: 1.5rem;
             color: var(--text-light);
         }
-
         .btn {
             display: inline-block;
             padding: 12px 30px;
@@ -92,32 +82,40 @@
             transition: all 0.3s ease;
             box-shadow: var(--shadow);
         }
-
         .btn:hover {
             background-color: var(--primary);
             transform: translateY(-3px);
         }
-
         .btn-outline {
             background-color: transparent;
             border: 2px solid var(--accent);
             color: var(--accent);
         }
-
         .btn-outline:hover {
             background-color: var(--accent);
             color: white;
         }
-
         .btn-cv {
             background-color: var(--success);
             margin-left: 10px;
         }
-
         .btn-cv:hover {
             background-color: #2f855a;
         }
-
+        .btn-small {
+            padding: 8px 20px;
+            font-size: 0.9rem;
+        }
+        .open-tag {
+            display: inline-block;
+            background-color: #48bb78;
+            color: white;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 10px;
+        }
         /* Header & Navigation */
         header {
             background-color: white;
@@ -128,84 +126,69 @@
             z-index: 1000;
             transition: background-color 0.3s ease;
         }
-
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 0;
         }
-
         .logo {
             font-size: 1.5rem;
             font-weight: 700;
             color: var(--primary);
         }
-
         .nav-links {
             display: flex;
             list-style: none;
         }
-
         .nav-links li {
             margin-left: 30px;
         }
-
         .nav-links a {
             text-decoration: none;
             color: var(--dark);
             font-weight: 500;
             transition: color 0.3s ease;
         }
-
         .nav-links a:hover {
             color: var(--accent);
         }
-
         .menu-toggle {
             display: none;
             font-size: 1.5rem;
             cursor: pointer;
         }
-
-        /* Hero Section */
         .hero {
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             color: white;
             padding: 150px 0 100px;
             text-align: center;
         }
-
         .hero h1 {
             color: white;
             font-size: 3rem;
             margin-bottom: 1rem;
         }
-
         .hero p {
             color: rgba(255, 255, 255, 0.8);
             font-size: 1.2rem;
             max-width: 700px;
-            margin: 0 auto 2rem;
+            margin: 0 auto 1.5rem;
         }
-
         .hero-btns {
             display: flex;
             justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
         }
-
         .hero .btn {
             background-color: white;
             color: var(--primary);
         }
-
         .hero .btn:hover {
             background-color: var(--accent);
             color: white;
         }
-
         /* About Section */
         .about-content {
             display: grid;
@@ -213,7 +196,6 @@
             gap: 40px;
             align-items: center;
         }
-
         .profile-img {
             width: 100%;
             border-radius: 10px;
@@ -228,12 +210,10 @@
             text-align: center;
             padding: 20px;
         }
-
         .profile-img i {
             font-size: 4rem;
             margin-bottom: 20px;
         }
-
         .about-text blockquote {
             font-style: italic;
             border-left: 4px solid var(--accent);
@@ -241,38 +221,32 @@
             margin: 30px 0;
             color: var(--text-light);
         }
-
-        /* Skills Section */
+        /* Skills */
         .skills-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
-
         .skill-category {
             background-color: white;
             padding: 30px;
             border-radius: 8px;
             box-shadow: var(--shadow);
         }
-
         .skill-category h3 {
             display: flex;
             align-items: center;
             gap: 10px;
             margin-bottom: 20px;
         }
-
         .skill-category h3 i {
             color: var(--accent);
         }
-
         .skill-items {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
         }
-
         .skill-item {
             background-color: var(--light);
             padding: 8px 15px;
@@ -280,28 +254,26 @@
             font-size: 0.9rem;
             color: var(--text);
         }
-
-        /* Projects Section */
+        /* Projects */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
-
         .project-card {
             background-color: white;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: var(--shadow);
             transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
         }
-
         .project-card:hover {
             transform: translateY(-10px);
         }
-
         .project-img {
-            height: 200px;
+            height: 180px;
             background-color: var(--secondary);
             display: flex;
             align-items: center;
@@ -309,22 +281,24 @@
             color: white;
             font-size: 2rem;
         }
-
         .project-content {
             padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
         }
-
         .project-content h3 {
             margin-bottom: 10px;
         }
-
+        .project-content p {
+            flex: 1;
+        }
         .project-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
             margin: 15px 0;
         }
-
         .project-tag {
             background-color: var(--light);
             padding: 5px 10px;
@@ -332,14 +306,12 @@
             font-size: 0.8rem;
             color: var(--text-light);
         }
-
-        /* Certifications Section */
+        /* Certifications */
         .certs-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
         }
-
         .cert-card {
             background-color: white;
             padding: 25px;
@@ -347,30 +319,25 @@
             box-shadow: var(--shadow);
             text-align: center;
         }
-
         .cert-card i {
             font-size: 2.5rem;
             color: var(--accent);
             margin-bottom: 15px;
         }
-
         .cert-card h3 {
             font-size: 1.2rem;
             margin-bottom: 10px;
         }
-
         .cert-card p {
             font-size: 0.9rem;
             margin-bottom: 0;
         }
-
-        /* Experience Section */
+        /* Experience Timeline */
         .timeline {
             position: relative;
             max-width: 800px;
             margin: 0 auto;
         }
-
         .timeline::after {
             content: '';
             position: absolute;
@@ -381,39 +348,32 @@
             left: 50%;
             margin-left: -2px;
         }
-
         .timeline-item {
             padding: 10px 40px;
             position: relative;
             width: 50%;
             box-sizing: border-box;
         }
-
         .timeline-item:nth-child(odd) {
             left: 0;
         }
-
         .timeline-item:nth-child(even) {
             left: 50%;
         }
-
         .timeline-content {
             padding: 20px;
             background-color: white;
             border-radius: 8px;
             box-shadow: var(--shadow);
         }
-
         .timeline-content h3 {
             margin-bottom: 5px;
         }
-
         .timeline-content .date {
             color: var(--accent);
             font-weight: 600;
             margin-bottom: 10px;
         }
-
         .timeline-item::after {
             content: '';
             position: absolute;
@@ -425,22 +385,18 @@
             top: 20px;
             z-index: 1;
         }
-
         .timeline-item:nth-child(odd)::after {
             right: -10px;
         }
-
         .timeline-item:nth-child(even)::after {
             left: -10px;
         }
-
-        /* Community Section */
+        /* Community */
         .community-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
-
         .community-card {
             background-color: white;
             padding: 30px;
@@ -448,36 +404,30 @@
             box-shadow: var(--shadow);
             text-align: center;
         }
-
         .community-card i {
             font-size: 3rem;
             color: var(--accent);
             margin-bottom: 20px;
         }
-
         .community-card h3 {
             margin-bottom: 15px;
         }
-
-        /* Contact Section */
+        /* Contact */
         .contact-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 40px;
         }
-
         .contact-info {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
-
         .contact-item {
             display: flex;
             align-items: center;
             gap: 15px;
         }
-
         .contact-item i {
             width: 50px;
             height: 50px;
@@ -489,24 +439,20 @@
             justify-content: center;
             font-size: 1.2rem;
         }
-
         .contact-form {
             background-color: white;
             padding: 30px;
             border-radius: 8px;
             box-shadow: var(--shadow);
         }
-
         .form-group {
             margin-bottom: 20px;
         }
-
         .form-group label {
             display: block;
             margin-bottom: 8px;
             font-weight: 500;
         }
-
         .form-group input,
         .form-group textarea {
             width: 100%;
@@ -515,13 +461,26 @@
             border-radius: 4px;
             font-size: 1rem;
         }
-
         .form-group textarea {
             height: 150px;
             resize: vertical;
         }
-
-        /* CV Download Section */
+        .form-status {
+            padding: 12px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            display: none;
+        }
+        .form-status.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .form-status.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
         .cv-section {
             text-align: center;
             background-color: white;
@@ -530,40 +489,33 @@
             box-shadow: var(--shadow);
             margin-top: 40px;
         }
-
         .cv-section h3 {
             margin-bottom: 20px;
         }
-
         /* Footer */
         footer {
             background-color: var(--primary);
             color: white;
             padding: 50px 0 20px;
         }
-
         .footer-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 40px;
             margin-bottom: 40px;
         }
-
         .footer-column h3 {
             color: white;
             margin-bottom: 20px;
         }
-
         .footer-column p {
             color: rgba(255, 255, 255, 0.7);
         }
-
         .social-links {
             display: flex;
             gap: 15px;
             margin-top: 20px;
         }
-
         .social-links a {
             display: flex;
             align-items: center;
@@ -575,12 +527,10 @@
             color: white;
             transition: all 0.3s ease;
         }
-
         .social-links a:hover {
             background-color: var(--accent);
             transform: translateY(-5px);
         }
-
         .copyright {
             text-align: center;
             padding-top: 20px;
@@ -588,13 +538,11 @@
             color: rgba(255, 255, 255, 0.5);
             font-size: 0.9rem;
         }
-
-        /* Responsive Design */
+        /* Responsive */
         @media (max-width: 768px) {
             .menu-toggle {
                 display: block;
             }
-
             .nav-links {
                 position: fixed;
                 top: 70px;
@@ -606,45 +554,35 @@
                 transition: all 0.3s ease;
                 box-shadow: var(--shadow);
             }
-
             .nav-links.active {
                 left: 0;
             }
-
             .nav-links li {
                 margin: 15px 0;
             }
-
             h1 {
                 font-size: 2rem;
             }
-
             .hero h1 {
                 font-size: 2.2rem;
             }
-
             .about-content {
                 grid-template-columns: 1fr;
             }
-
             .timeline::after {
                 left: 31px;
             }
-
             .timeline-item {
                 width: 100%;
                 padding-left: 70px;
                 padding-right: 25px;
             }
-
             .timeline-item:nth-child(even) {
                 left: 0;
             }
-
             .timeline-item::after {
                 left: 21px;
             }
-
             .timeline-item:nth-child(odd)::after,
             .timeline-item:nth-child(even)::after {
                 left: 21px;
@@ -681,7 +619,8 @@
             <h1>Favour Momooluwa Adebisi</h1>
             <p>Security Engineer | Application Security Specialist | Cybersecurity Advocate</p>
             <p>Building resilient digital defenses and empowering the next generation of cyber guardians. I specialize in Application Security, VAPT, Threat Detection, and Blue Team Operations.</p>
-            <div class="hero-btns">
+            <div class="open-tag">🔓 Open to Opportunities</div>
+            <div class="hero-btns" style="margin-top: 25px;">
                 <a href="#projects" class="btn">View My Work</a>
                 <a href="#contact" class="btn btn-outline">Get In Touch</a>
                 <a href="https://drive.google.com/file/d/1YR0o_M6ykG0raCxpU--lUJYXZ0P1FlS0/view?usp=sharing" class="btn btn-cv" target="_blank">Download CV</a>
@@ -695,14 +634,13 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="profile-img-container">
-                    <!-- Placeholder for profile image - Add your image here -->
                     <div class="profile-img">
                         <img src="Gemini_Generated_Image_h6edc3h6edc3h6ed (1).png" alt="" width="100%">
                     </div>
                 </div>
                 <div class="about-text">
-                    <p>I am a Cybersecurity Engineer with over two years of experience in the technology industry, specializing in Application Security, VAPT, and blue team operations. Currently interning as a Security Engineer at Reziliant Inc., I'm gaining hands-on experience in application security and various security domains.</p>
-                    <p>I have completed foundational training through the Google Cybersecurity Certificate and Semgrep APPSEC foundation enhancing my skills in threat identification, incident response, and risk mitigation. Known for strong leadership, presentation skills, and teamwork, I thrive in collaborative, fast-paced environments.</p>
+                    <p>I am a cybersecurity enthusiast building hands-on experience since 2023 across the technology industry, specializing in Application Security, VAPT, and blue team operations. Currently interning as a Security Engineer at Rezliant Inc., I'm gaining real-world exposure to application security assessments and security engineering tasks.</p>
+                    <p>I have completed foundational training through various cybersecurity certifications, enhancing my skills in threat identification, incident response, and risk mitigation. Known for strong leadership, presentation skills, and teamwork, I thrive in collaborative, fast-paced environments.</p>
                     <p>Passionate about empowering youth in Africa, I'm committed to driving innovation through tech education and mentorship. My long-term vision is to build a multi-billion-dollar cybersecurity company and empower the next generation of African tech talents.</p>
                     <blockquote>
                         "My mission is to secure the digital world, one system at a time, while raising an army of skilled professionals to do the same."
@@ -725,24 +663,26 @@
                         <div class="skill-item">Penetration Testing (VAPT)</div>
                         <div class="skill-item">Secure Coding Practices</div>
                         <div class="skill-item">Web Vulnerability Assessment</div>
+                        <div class="skill-item">Threat Detection</div>
                         <div class="skill-item">Intrusion Detection Systems (IDS)</div>
                         <div class="skill-item">Blue Team Operations</div>
+                        <div class="skill-item">MITRE ATT&CK</div>
+                        <div class="skill-item">S-SDLC</div>
                     </div>
                 </div>
                 <div class="skill-category">
                     <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
                     <div class="skill-items">
-                        <div class="skill-item">Python</div>
-                        <div class="skill-item">PHP</div>
-                        <div class="skill-item">JavaScript</div>
-                        <div class="skill-item">HTML/CSS</div>
                         <div class="skill-item">OWASP ZAP</div>
                         <div class="skill-item">Nmap</div>
                         <div class="skill-item">Burp Suite</div>
-                        <div class="skill-item">auditd</div>
                         <div class="skill-item">TryHackMe</div>
-                        <div class="skill-item">Hacktify</div>                    
-                        <div class="skill-item">Semgrep</div>
+                        <div class="skill-item">OWASP Juice Shop</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">PHP</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">C++</div>
+                        <div class="skill-item">HTML/CSS</div>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -757,9 +697,7 @@
                         <div class="skill-item">Critical Thinking</div>
                         <div class="skill-item">Problem Solving</div>
                         <div class="skill-item">Time Management</div>
-                        <div class="skill-item">Canva</div>
-                        <div class="skill-item">Microsoft Word / Excel / PowerPoint</div>
-                        
+                        <div class="skill-item">Executive Reporting</div>
                     </div>
                 </div>
             </div>
@@ -771,66 +709,125 @@
         <div class="container">
             <h2>Featured Projects</h2>
             <div class="projects-grid">
+                <!-- Existing projects -->
                 <div class="project-card">
-                    <div class="project-img">
-                        <i class="fas fa-eye"></i>
-                    </div>
+                    <div class="project-img"><i class="fas fa-eye"></i></div>
                     <div class="project-content">
                         <h3>Intrusion Detection System (IDS)</h3>
-                        <p>Designed and implemented a lightweight IDS to monitor /etc/passwd for unauthorized access using auditd and Python's watchdog library. Configured automated email alerts for suspicious activity detection.</p>
+                        <p>Lightweight IDS monitoring /etc/passwd using auditd and Python's watchdog library with automated email alerts.</p>
                         <div class="project-tags">
-                            <div class="project-tag">Python</div>
-                            <div class="project-tag">auditd</div>
-                            <div class="project-tag">Linux</div>
-                            <div class="project-tag">Blue Team</div>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">auditd</span>
+                            <span class="project-tag">Linux</span>
+                            <span class="project-tag">Blue Team</span>
                         </div>
-                        <a href="https://github.com/Favson/Lightweight-IDS" class="btn" target="_blank">View on GitHub</a>
+                        <a href="https://github.com/Favson/Lightweight-IDS" class="btn btn-small" target="_blank">View on GitHub</a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-img">
-                        <i class="fas fa-keyboard"></i>
-                    </div>
+                    <div class="project-img"><i class="fas fa-keyboard"></i></div>
                     <div class="project-content">
                         <h3>Advanced Keylogger</h3>
-                        <p>Educational keylogger that captures and records every keystroke made by the user in real time. Developed to understand offensive security techniques and inform defense strategies.</p>
+                        <p>Educational keylogger capturing real-time keystrokes to understand offensive security techniques and inform defense strategies.</p>
                         <div class="project-tags">
-                            <div class="project-tag">Python</div>
-                            <div class="project-tag">Security Research</div>
-                            <div class="project-tag">Red Team Tactics</div>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Security Research</span>
+                            <span class="project-tag">Red Team</span>
                         </div>
-                        <a href="https://github.com/Favson/keylogger_prodigy_tsk4" class="btn" target="_blank">View on GitHub</a>
+                        <a href="https://github.com/Favson/keylogger_prodigy_tsk4" class="btn btn-small" target="_blank">View on GitHub</a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-img">
-                        <i class="fas fa-lock"></i>
-                    </div>
+                    <div class="project-img"><i class="fas fa-lock"></i></div>
                     <div class="project-content">
                         <h3>Caesar Cipher Tool</h3>
-                        <p>Cryptographic tool that helps to encrypt and decrypt plain-texts using the classical Caesar cipher method for educational purposes.</p>
+                        <p>Classical cryptography tool for encrypting and decrypting plain-texts using the Caesar cipher method.</p>
                         <div class="project-tags">
-                            <div class="project-tag">Python</div>
-                            <div class="project-tag">Cryptography</div>
-                            <div class="project-tag">Security Tools</div>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Cryptography</span>
+                            <span class="project-tag">Security Tools</span>
                         </div>
-                        <a href="https://github.com/Favson/Caesar_cipher" class="btn" target="_blank">View on GitHub</a>
+                        <a href="https://github.com/Favson/Caesar_cipher" class="btn btn-small" target="_blank">View on GitHub</a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-img">
-                        <i class="fas fa-image"></i>
-                    </div>
+                    <div class="project-img"><i class="fas fa-image"></i></div>
                     <div class="project-content">
                         <h3>Pixel Manipulation App</h3>
-                        <p>Python application using Tkinter as the GUI that helps to encrypt and decrypt images through pixel manipulation techniques.</p>
+                        <p>Python GUI application (Tkinter) for encrypting and decrypting images through pixel manipulation techniques.</p>
                         <div class="project-tags">
-                            <div class="project-tag">Python</div>
-                            <div class="project-tag">Tkinter</div>
-                            <div class="project-tag">Image Processing</div>
-                            <div class="project-tag">Cryptography</div>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Tkinter</span>
+                            <span class="project-tag">Image Processing</span>
+                            <span class="project-tag">Cryptography</span>
                         </div>
-                        <a href="https://github.com/Favson/image_en-decrypt_prodigy_task-02" class="btn" target="_blank">View on GitHub</a>
+                        <a href="https://github.com/Favson/image_en-decrypt_prodigy_task-02" class="btn btn-small" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img"><i class="fas fa-memory"></i></div>
+                    <div class="project-content">
+                        <h3>Virtual Memory Manager</h3>
+                        <p>Simulated virtual memory manager in C++ with page tables, segment tables, and LRU replacement.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">C++</span>
+                            <span class="project-tag">Systems Programming</span>
+                            <span class="project-tag">Memory Management</span>
+                        </div>
+                        <a href="https://github.com/Favson/Virtual-Memory-Manager" class="btn btn-small">View Details</a>
+                    </div>
+                </div>
+
+                <!-- New Projects -->
+                <div class="project-card">
+                    <div class="project-img" style="background-color: #e67e22;"><i class="fas fa-bug"></i></div>
+                    <div class="project-content">
+                        <h3>OWASP Juice Shop — VAPT Assessment</h3>
+                        <p>Conducted a comprehensive black-box penetration test on OWASP Juice Shop. Identified and exploited 8 vulnerabilities including SQL Injection, XSS, Broken Access Control, and Information Disclosure. Produced a full executive security briefing with prioritized remediation roadmap.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">VAPT</span>
+                            <span class="project-tag">Burp Suite</span>
+                            <span class="project-tag">OWASP Top 10</span>
+                            <span class="project-tag">SQL Injection</span>
+                            <span class="project-tag">XSS</span>
+                            <span class="project-tag">Broken Access Control</span>
+                            <span class="project-tag">Security Reporting</span>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1RY_nRnCbWDJxLcKAwPvNUOVu91h3g9Px/view?usp=drive_link" class="btn btn-small" target="_blank">View Report</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img" style="background-color: #c0392b;"><i class="fas fa-skull-crossbones"></i></div>
+                    <div class="project-content">
+                        <h3>MGM Resorts 2023 Breach — MITRE ATT&CK Mapping</h3>
+                        <p>Deconstructed the 2023 MGM Resorts cyberattack (resulting in $100M in losses) and mapped the full adversary kill chain to the MITRE ATT&CK framework. Identified 6 distinct tactics and techniques including social engineering, privilege escalation, and ransomware deployment.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">MITRE ATT&CK</span>
+                            <span class="project-tag">Threat Intelligence</span>
+                            <span class="project-tag">Incident Analysis</span>
+                            <span class="project-tag">Social Engineering</span>
+                            <span class="project-tag">Ransomware</span>
+                            <span class="project-tag">Executive Reporting</span>
+                        </div>
+                        <a href="https://docs.google.com/document/d/17UxVN1-jXWDtkzderYDnjZRMY62kaDTh/edit?usp=sharing&ouid=116067663633101204280&rtpof=true&sd=true" class="btn btn-small" target="_blank">View Report</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img" style="background-color: #2980b9;"><i class="fas fa-credit-card"></i></div>
+                    <div class="project-content">
+                        <h3>PayPort Fintech App — S-SDLC Security Review</h3>
+                        <p>Performed a full Secure Software Development Life Cycle (S-SDLC) review of a peer-to-peer payment application handling live bank credentials. Injected security activities across all 5 SDLC phases including Threat Modeling, SAST, DAST, and Continuous Monitoring.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">S-SDLC</span>
+                            <span class="project-tag">AppSec</span>
+                            <span class="project-tag">Threat Modeling</span>
+                            <span class="project-tag">SAST</span>
+                            <span class="project-tag">DAST</span>
+                            <span class="project-tag">OAuth Security</span>
+                            <span class="project-tag">Fintech Security</span>
+                            <span class="project-tag">Risk Assessment</span>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1MIYNQBiU8bRQR_jN1GuGt1gImFN0oESk/view?usp=sharing" class="btn btn-small" target="_blank" >View Report</a>
                     </div>
                 </div>
             </div>
@@ -848,14 +845,9 @@
                     <p>Ladoke Akintola University of Technology (in view)</p>
                 </div>
                 <div class="cert-card">
-                    <i class="fab fa-google"></i>
-                    <h3>Google Cybersecurity Certificate</h3>
-                    <p>Coursera (in view)</p>
-                </div>
-                <div class="cert-card">
                     <i class="fas fa-certificate"></i>
                     <h3>Cybersecurity Certification</h3>
-                    <p>SQI College of ICT (2024)</p>
+                    <p>Semgrep, Hacktify, Prodigy Infotech</p>
                 </div>
                 <div class="cert-card">
                     <i class="fas fa-medal"></i>
@@ -863,12 +855,10 @@
                     <p>TryHackMe, Hacktify, Flexisaf, Prodigy InfoTech</p>
                 </div>
             </div>
-            
-            <!-- CV Download Section -->
             <div class="cv-section">
                 <h3>Detailed Professional CV</h3>
                 <p>For a comprehensive overview of my experience, education, and achievements, download my full CV.</p>
-                <a href="https://drive.google.com/file/d/1YR0o_M6ykG0raCxpU--lUJYXZ0P1FlS0/view?usp=sharing" class="btn btn-cv" target="_blank">Download CV (PDF)</a>
+                <a href="https://drive.google.com/file/d/1zf8loBW-zw1_aBfBAm4_KVvPulLq2EdK/view?usp=sharing" class="btn btn-cv" target="_blank">Download CV (PDF)</a>
             </div>
         </div>
     </section>
@@ -880,29 +870,29 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Security Engineer Intern</h3>
-                        <div class="date">2026 - Present | Reziliant Inc.</div>
-                        <p>Working on Application Security (AppSec), Vulnerability Assessment and Penetration Testing (VAPT), and various security domains. Developing expertise in identifying and mitigating security vulnerabilities in applications. Enhancing presentation, communication, and teamwork skills in a professional security environment.</p>
+                        <h3>Security Engineering Intern</h3>
+                        <div class="date">2025 – Present · Rezliant Inc.</div>
+                        <p>Currently interning as a Security Engineering Intern at Rezliant Inc where I work on real-world application security assessments and security engineering tasks. Key work includes conducting a full VAPT on OWASP Juice Shop identifying 8 vulnerabilities with a complete executive briefing, performing an S-SDLC security review of a fintech payment application across all 5 development phases, mapping the MGM Resorts 2023 breach to the MITRE ATT&CK framework, and receiving an introduction to GRC frameworks including ISO 27001 and the NIST Risk Management Framework. I also collaborate with a team of interns on joint security assessments and deliver security awareness presentations to improve internal cybersecurity culture.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <h3>Frontend Intern</h3>
-                        <div class="date">2025 - Flexisaf Edusoft Limited Nigeria</div>
+                        <div class="date">2025 · Flexisaf Edusoft Limited Nigeria</div>
                         <p>Hands-on experience creating responsive web pages and delivering projects within set timelines.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <h3>Cybersecurity Penetration Testing Intern</h3>
-                        <div class="date">2025 - Hacktify Cybersecurity</div>
+                        <div class="date">2025 · Hacktify Cybersecurity</div>
                         <p>Gained hands-on experience in vulnerability assessment, web application security, and project delivery. Responsible for reporting and documentation.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <h3>Cybersecurity Intern</h3>
-                        <div class="date">2025 - Prodigy Infotech</div>
+                        <div class="date">2025 · Prodigy Infotech</div>
                         <p>Hands-on experience building security projects within timeframes and delivering excellent results.</p>
                     </div>
                 </div>
@@ -932,7 +922,7 @@
     </section>
 
     <!-- Contact Section -->
-<section id="contact">
+    <section id="contact">
         <div class="container">
             <h2>Get In Touch</h2>
             <div class="contact-container">
@@ -1006,7 +996,6 @@
         </div>
     </section>
 
-
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -1036,7 +1025,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2024 Favour Momooluwa Adebisi. All Rights Reserved.</p>
+                <p>&copy; 2026 Favour Momooluwa Adebisi. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -1046,38 +1035,28 @@
         document.querySelector('.menu-toggle').addEventListener('click', function() {
             document.querySelector('.nav-links').classList.toggle('active');
         });
-
-        // Close mobile menu when clicking on a link
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 document.querySelector('.nav-links').classList.remove('active');
             });
         });
 
-        // Contact Form Submission
+        // Contact form submission with FormSpree
         document.getElementById('contactForm').addEventListener('submit', async function(e) {
             e.preventDefault();
-            
             const form = e.target;
             const formData = new FormData(form);
             const submitButton = form.querySelector('button[type="submit"]');
             const statusDiv = document.getElementById('formStatus');
-            
-            // Show loading state
             submitButton.textContent = 'Sending...';
             submitButton.disabled = true;
-            
             try {
                 const response = await fetch(form.action, {
                     method: 'POST',
                     body: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
+                    headers: { 'Accept': 'application/json' }
                 });
-                
                 if (response.ok) {
-                    // Success message
                     statusDiv.textContent = 'Thank you for your message! I will get back to you soon.';
                     statusDiv.className = 'form-status success';
                     statusDiv.style.display = 'block';
@@ -1086,22 +1065,17 @@
                     throw new Error('Form submission failed');
                 }
             } catch (error) {
-                // Error message
-                statusDiv.textContent = 'Sorry, there was an error sending your message. Please email me directly at adebisimomoluwa@gmail.com';
+                statusDiv.textContent = 'Sorry, there was an error. Please email me directly at adebisimomoluwa@gmail.com';
                 statusDiv.className = 'form-status error';
                 statusDiv.style.display = 'block';
             } finally {
-                // Reset button state
                 submitButton.textContent = 'Send Message';
                 submitButton.disabled = false;
-                
-                // Scroll to show the status message
                 statusDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             }
         });
 
-
-        // Navbar background on scroll
+        // Navbar scroll effect
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
             if (window.scrollY > 100) {
